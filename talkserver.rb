@@ -18,7 +18,7 @@ while (session = server.accept)
 	if found = request.match(/%22(.*)%22/)
 		output = found.captures[0].gsub(/%20/,' ')
 		puts output
-		`say -v Daniel \"#{output}\"`
+		`say -v Whisper \"#{output}\"`
 	end
 
 	session.close
