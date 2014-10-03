@@ -4,6 +4,8 @@ require 'socket'
 
 ip_addr = `ifconfig en0`.match(/inet (\d*\.\d*\.\d*\.\d*)/)[1]
 
+puts ip_addr
+
 
 server = TCPServer.new(ip_addr, 8000)
 
